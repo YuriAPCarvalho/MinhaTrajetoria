@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(142, 164, 238);
+    font-family: sans-serif;
+    padding: 30px;
+
+}
+h1 {
+    text-align: center;
+}
+div.nota input {
+    border: none;
+    padding: 10px 30px ;
+    margin: 5px 0px;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 465px;
+}
+div.nota button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+div.resultado {
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 445px;
+}
+div.resultado legend{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 6px;    
+}
+div.resultado fieldset{
+    background-color: rgb(175, 175, 175);
+    border-radius: 5px;
+    border-color: black;
+    border: 1px solid black;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Média</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div>
+        <h1>
+            STATUS DOS ALUNOS
+        </h1>
+    </div>
+    <div class="nota">
+        <input type="number" name="nota" id="notaAluno" placeholder="Insira a nota do aluno">
+        <button onclick="adicionar()">Adicionar</button>
+    </div>
+    <div class="resultado">
+        <fieldset>
+            <legend>Dados do aluno</legend>
+            <p>Notas: <span id="listaNota"></span>
+            <p>Maior nota: <span id="maiorNota"></span>
+            <p>Menor nota: <span id="menorNota"></span>
+            <p>Média: <span id="media"></span>
+            <p>Situação do aluno: <span id="situacao"></span>
+        </fieldset>
+    </div>
+</body>
+
+</html>

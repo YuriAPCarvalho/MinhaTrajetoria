@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de compras</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Lista de compras</h1>
+
+        <div>
+            <input type="text" name="lista" id="item" placeholder="Insira o item da lista">
+        </div>
+        <div>
+            <button onclick="adicionarItem()">Adicionar</button>
+            <button onclick="limpar()">Limpar</button>
+        </div>
+        <fieldset>
+            <legend>Remover</legend>
+            <div>
+                <input type="text" placeholder="Nome do item a remover" id="itemRemover">
+            </div>
+            <div>
+                <button onclick="removerItem()">Remover</button>
+        </fieldset>
+    </div>
+    <div class="card">
+        <span id="lista"></span>
+    </div>
+</body>
+
+</html>

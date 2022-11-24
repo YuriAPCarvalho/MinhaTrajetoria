@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora de BTU</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            padding: 20px;
+            text-align: center;
+            font-size: 150%;
+        }
+
+        div {
+            background-color: gray;
+            margin: 50px 100px;
+            padding: 5px;
+            width: 400px;
+            text-align: center;
+        }
+
+        button {
+            margin: 5px;
+            padding: 7px;
+
+
+        }
+
+        input {
+            padding: 7px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Calculadora de BTU</h1>
+        <p>Área do comodo (m²)</p>
+        <input type="number" id="m2">
+        <p>Quantidade de pessoas no comodo</p>
+        <input type="number" id="qtdPessoas">
+        <p>Quantidade de eletronicos</p>
+        <input type="number" id="qtdEletronicos">
+        <p><button onclick="calcular()">Calcular</button></p>
+
+    </div>
+</body>
+<script>
+    function calcular() {
+        let areaString = document.getElementById("m2").value
+        let qtdPessoas = document.getElementById("qtdPessoas").value
+        let qtdEletronicos = document.getElementById("qtdEletronicos").value
+
+        let area = parseFloat(areaString)
+        let qtdp = parseInt(qtdPessoas)
+        let qtde = parseInt(qtdEletronicos)
+
+        total = (area * 600) + (qtdp * 600) + (qtde * 600)
+
+        window.alert(total)
+    }
+</script>
+
+</html>

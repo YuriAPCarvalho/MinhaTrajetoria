@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(194, 194, 194);
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 80px;  
+}
+form {
+    background-color: rgb(48, 48, 48);
+    width: 450px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin: auto;   
+}
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(136, 133, 133);
+
+}
+fieldset {
+    padding: 20px 20px;
+    width: 400px;
+    border-radius: 5px;
+
+}
+legend {
+    background-color: black;
+    color: white;   
+    padding: 10px;
+    border-radius: 20px;
+    margin:auto;
+    
+    
+}

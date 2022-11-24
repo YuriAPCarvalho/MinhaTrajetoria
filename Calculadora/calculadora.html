@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>Calculadora High Tech</title>
+    <meta charset="UTF-8">
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .card {
+            width: 30%;
+            margin: 50px auto;
+            background-color: cornflowerblue;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px gray;
+        }
+
+        .card h1 {
+            color: white;
+            font-weight: 300;
+        }
+
+        .card input {
+            width: 100%;
+            margin: 5px 0px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+
+        }
+
+        .card button {
+            border: nome;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .card button:hover {
+            cursor: pointer;
+            background-color: gray;
+            color: white;
+            font-weight: 600;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Calculadora High Tech</h1>
+
+        <div>
+            <input type="number" placeholder="Digite o primeiro" id="numero1">
+        </div>
+        <div><input type="number" placeholder="Digite o segundo numero" id="numero2"></div>
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="dividir()">/</button>
+        <button onclick="multiplicar()">*</button>
+    </div>
+</body>
+
+<script>
+    function somar() {
+        let n1String = document.getElementById("numero1").value
+        let n2String = document.getElementById("numero2").value
+
+        let n1 = parseFloat(n1String)
+        let n2 = parseFloat(n2String)
+
+        let soma = n1 + n2
+
+        window.alert("O resultado da soma é:" + soma)
+    }
+
+    function subtrair() {
+        let n1String = document.getElementById("numero1").value
+        let n2String = document.getElementById("numero2").value
+
+        let n1 = parseFloat(n1String)
+        let n2 = parseFloat(n2String)
+
+        let sub = n1 - n2
+
+        window.alert("O resultado da subtração é:" + sub)
+
+    }
+
+    function dividir() {
+        let n1String = document.getElementById("numero1").value
+        let n2String = document.getElementById("numero2").value
+
+        let n1 = parseFloat(n1String)
+        let n2 = parseFloat(n2String)
+
+        let divisao = n1 / n2
+
+        window.alert("O resultado da divisão é: " + divisao)
+    }
+
+    function multiplicar() {
+        let n1String = document.getElementById("numero1").value
+        let n2String = document.getElementById("numero2").value
+
+        let n1 = parseFloat(n1String)
+        let n2 = parseFloat(n2String)
+
+        let multiplicacao = n1 * n2
+
+        window.alert("O resultado da multiplicação é:" + multiplicacao)
+    }
+
+
+</script>
+
+</html>

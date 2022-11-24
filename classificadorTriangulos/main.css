@@ -1,0 +1,27 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(151, 116, 116);
+    text-align: center;
+    margin-top: 50px;
+}
+input{
+    display: block;
+    padding: 13px 20px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    border: none;
+    margin: auto;
+    margin-top: 20px;  
+    width: 300px;
+}
+button {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+
+}
+button:hover {
+    cursor: pointer;
+    background-color:rgb(80, 78, 78);;
+}
