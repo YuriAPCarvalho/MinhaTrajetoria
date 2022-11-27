@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de Convidados</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Cadastro de convidados</h1>
+        <div>
+            <input type="text" placeholder="Nome do convidado" id="nomeConvidado">
+            <div>
+                <button onclick="inserir()">Inserir</button>
+                <button onclick="limpar()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h1>Lista de convidados</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do convidado</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tabela"></tbody>
+        </table>
+    </div>
+</body>
+
+</html>
