@@ -30,10 +30,36 @@ function limpar() {
 }
 
 function remover(posicao) {
-    if (confirm("Tem certeza que deseja remover este convidado?") == true )  {
+    if (confirm("Tem certeza que deseja remover este convidado?") == true) {
         convidados.splice(posicao, 1)
         imprimir()
     }
 }
+
+function buscar() {
+    let buscarNome = document.getElementById("nomeConvidado").value
+
+    if (buscarNome == "") {
+        alert("Preencha o nome que deseja buscar!")
+    } else {
+        let i = 0
+        let achou = false
+
+        while (i < convidados.length && !achou) {
+            if (convidados[i] == buscarNome) {
+                alert(`O nome ${buscarNome} está na posição ${i +1}`)                
+                achou = true
+            }
+            i++
+        }
+
+        if (!achou) {
+            alert("Nome não encontrado")
+        }
+   }
+}
+
+
+
 
 
