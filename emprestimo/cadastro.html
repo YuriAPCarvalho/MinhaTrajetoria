@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Emprestimo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' type="module"></script>
+</head>
+
+<body>
+    <h1>Emprestimo</h1>
+    <form>
+        <h2>Cadastro de cliente</h2>
+        <input type="text" name="nome" id="nome" placeholder="Nome completo do cliente">
+        <input type="text" name="cpf" id="cpf" placeholder="CPF do cliente">
+        <input type="text" name="cep" id="cep" placeholder="CEP do cliente">
+        <input type="text" name="numbero" id="numero" placeholder="Número da residência">
+        <input type="number" name="limite" id="limite" placeholder="Limite de crédito">
+        <button id="btnCadastrar" type="button">Cadastrar</button>
+    </form>
+    <div class="lista">
+        <h2>Clientes cadastrados</h2>
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>CEP</th>
+                <TH>Limite</TH>
+            </thead>
+            <tbody id="tabelaCliente">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

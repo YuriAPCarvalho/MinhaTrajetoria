@@ -1,0 +1,38 @@
+.geral{
+    background-color: lightgray;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    width: 70%;
+    text-align: center;
+}
+
+.geral input {
+    padding: 7px;
+    border-radius: 2px;
+    border: none;
+
+}
+
+.geral button {
+    padding: 7px;
+    border: none;
+    border-radius: 2px;
+
+}
+
+.geral button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+
+.ordenar button  { 
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.resultado {
+    text-align: left;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
